@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+ <html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Heroes III Creature Comparer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="creatures.js"> </script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        
+
+    </head>
+    <body>
+        <script id="template" type="text/x-handlebars-template">
+            <h2>{{name}}</h2>
+            <p>HP: {{hp}}</p>
+            <p>Attack: {{attack}}</p>
+            <p>Defense: {{defense}}</p>
+            <p>Speed: {{speed}}</p>
+            <p>Min damage: {{minDamage}}</p>
+            <p>Max damage: {{maxDamage}}</p>
+            <p>Gold cost: {{costGold}}</p>
+            {{#if costRes}}
+                <p>{{resource}}: {{costRes}}</p>
+            {{/if}}
+            <p>Special: {{special}}</p>
+        </script>
+        <div id="comparison">
+
+            <div id="cr1" class="creature">
+                <h2>Creature 1</h2>
+                <select name="" class="townselect">
+                    <option disabled selected>Choose town</option>
+                    <option value="Castle">Castle</option>
+                    <option value="Rampart">Rampart</option>
+                    <option value="Tower">Tower</option>
+                    <option value="Inferno">Inferno</option>
+                    <option value="Necropolis">Necropolis</option>
+                    <option value="Dungeon">Dungeon</option>
+                    <option value="Stronghold">Stronghold</option>
+                    <option value="Fortress">Fortress</option>
+                    <option value="Conflux">Conflux</option>
+                    <option value="Neutral">Neutral</option>
+                </select>
+                <select name="" class="creatureselect">
+                    <option disabled selected>Creature</option>
+                </select>
+                <label for="">Quantity:</label>
+                <input type="text" class="quantity">
+                <div class="info">
+
+                </div>
+                
+            </div>
+            <div id="cr2" class="creature">
+                <h2>Creature 2</h2>
+                <select name="" class="townselect">
+                    <option disabled selected>Choose town</option>
+                    <option value="Castle">Castle</option>
+                    <option value="Rampart">Rampart</option>
+                    <option value="Tower">Tower</option>
+                    <option value="Inferno">Inferno</option>
+                    <option value="Necropolis">Necropolis</option>
+                    <option value="Dungeon">Dungeon</option>
+                    <option value="Stronghold">Stronghold</option>
+                    <option value="Fortress">Fortress</option>
+                    <option value="Conflux">Conflux</option>
+                    <option value="Neutral">Neutral</option>
+                </select>
+                <select name="" class="creatureselect">
+                    <option disabled selected>Creature</option>
+                </select>
+                <label for="">Quantity:</label>
+                <input type="text" class="quantity">
+                <div class="info">
+
+                </div>
+
+            </div>
+            <div class="stacks">
+                <h3>Stacks</h3>
+                <p><i>Few:</i> 1-4</p>
+                <p><i>Several:</i> 5-9</p>
+                <p><i>Lots:</i> 20-49</p>
+                <p><i>Horde:</i> 50-99</p>
+                <p><i>Throng:</i> 100-249</p>
+                <p><i>Swarm:</i> 250-499</p>
+                <p><i>Zounds:</i> 500-999</p>
+                <p><i>Legion:</i> 1000-9999</p>
+            </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="handlebars-v1.3.0.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        
+        <script src="main.js"></script>
+        <script type="text/javascript">
+            var config1 = {container: $('#cr1'),template: $('#template')};
+            var config2 = {container: $('#cr2'),template: $('#template')};
+        </script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-45016113-1', 'eirikur.se');
+          ga('send', 'pageview');
+
+        </script>
+
+    </body>
+</html>

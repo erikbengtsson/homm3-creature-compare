@@ -1,0 +1,64 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+   	background: #eaedf1;
+}
+
+* {
+	box-sizing: border-box;
+}
+#comparison {
+	width: 544px;
+	margin: 0 auto;
+}
+#comparison > * {
+	position: relative;
+	float: left;
+	padding: 20px;
+	
+	margin: 10px;
+	background: #fafafa;
+
+}
+#comparison .creature {
+	padding-top: 70px;
+	width: 250px;
+}
+h2 {
+	text-transform: uppercase;
+	color: #fafafa;
+	background: #ee7836;
+	position: absolute;
+	margin: 0;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-size: 16px;
+}
+h3 {
+	margin-top: 0;
+}
+p {
+	margin: 8px 0;
+
+}
+.stacks {
+	width: 520px;
+}
+.info p:first-of-type {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #eaedf1;
+}
+select {
+	width: 150px;
+	margin-bottom: 10px;
+}
+input[type=text]{
+	width: 40px;
+}
