@@ -49,7 +49,17 @@ p {
 }
 .stacks {
 	width: 520px;
+	font-size: 14px;
+
 }
+.stacks .numbers {
+	-moz-column-count: 3;
+   	-moz-column-gap: 20px;
+   	-webkit-column-count: 3;
+   	-webkit-column-gap: 20px;
+
+}
+
 .info p:first-of-type {
 	margin-top: 15px;
 	padding-top: 15px;
